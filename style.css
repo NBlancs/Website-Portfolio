@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: gray;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+
+.logo{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700; 
+}
+
+.navbar a{
+    position: relative;
+    font-size:  18px;
+    color:#fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top:100%;
+    left:0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+.intro {
+    margin-top: 211px;
+    margin-bottom: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #fff; /*remove this after*/
+}
+
+
+.profile-pic {
+    width: 498.45px;
+    height: 483.64px;
+    background-image: url('profimg.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+
+    margin-right: 40px;
+}
+
+.intro-text {
+    max-width: 600px;
+}
+
+/* .intro-text h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+} */
+
+.intro-text p {
+    margin-bottom: 10px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+
+.intro-text p:first-of-type {
+    font-size: 16px;
+    margin-bottom: 55px;
+    letter-spacing: 1px;
+}
+
+
+.skills {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff; /*remove this after*/
+}
+
+ .skills h1 { 
+    font-size: 72px;
+    margin-bottom: 90px;
+} 
+    
+
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-row-gap: 20px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill-circle {
+    width: 126px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.skill-circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(0px);
+    transition: filter 0.3s ease;
+}
+
+.skill-circle.html::before {
+    background-image: url('imgs/html.png');
+}
+
+.skill-circle.css::before {
+    background-image: url('imgs/css.png');
+}
+
+.skill-circle.figma::before {
+    background-image: url('imgs/figma.png');
+}
+
+.skill-circle.java::before {
+    background-image: url('imgs/java.png');
+}
+
+.skill-circle.python::before {
+    background-image: url('imgs/python.png');
+}
+
+.skill-circle.javascript::before {
+    background-image: url('imgs/js.png');
+}
+
+.skill-circle.kotlin::before {
+    background-image: url('imgs/kotlin.png');
+}
+
+.skill-circle.php::before {
+    background-image: url('imgs/php.png');
+}
+
+.skill-circle.mysql::before {
+    background-image: url('imgs/mysql.png');
+}
+
+.skill-circle.android::before {
+    background-image: url('imgs/android.png');
+}
+
+.skill-circle:hover::before {
+    filter: blur(3px);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.skill-circle:hover .overlay {
+    opacity: 1;
+}
+
+/* Adjust the second row to shift the circles */
+.skills-container .skill-circle:nth-child(7) {
+    grid-column-start: 2;
+}
+.skills-container .skill-circle:nth-child(8) {
+    grid-column-start: 3;
+}
+.skills-container .skill-circle:nth-child(9) {
+    grid-column-start: 4;
+}
+.skills-container .skill-circle:nth-child(10) {
+    grid-column-start: 5;
+}
+
+
+/* Type writter effect */
+/* "Hi, I am Noel Jhumel Blanco" */
+.typewritter {
+    font-size: 32px;
+    color: #000000;
+    font-family: monospace;
+    overflow: hidden; 
+    border-right: .15em solid orange; 
+    white-space: nowrap; 
+    margin-left: 0;
+    text-align: left;
+    letter-spacing: .1em; 
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(0, 0, 0) }
+  }
+  
