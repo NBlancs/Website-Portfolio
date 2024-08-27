@@ -406,7 +406,7 @@ form button:hover{
 footer{
     position: relative;
     width: 100%;
-    background: gray;
+    background: #78797D;
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
