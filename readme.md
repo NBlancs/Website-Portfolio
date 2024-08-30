@@ -8,3 +8,7 @@
 
  Languages utilized
  ---> Vanilla CSS, HTML
+
+ Issues
+ ----> Not Yet Responsive for Mobile Devices
+ 
