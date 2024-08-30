@@ -10,5 +10,5 @@
  ---> Vanilla CSS, HTML
 
  Issues
- ----> Not Yet Responsive for Mobile Devices
+ ---> Not Yet Responsive for Mobile Devices
  
