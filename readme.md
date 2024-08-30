@@ -1,10 +1,8 @@
 # Project Status: Finished
 
-### Project Started: Aug 26, 2024
+#### Project Started: Aug 26, 2024
 
-### Project Finished: Aug 28, 2024
-
-### Will Add Updates in the future
+#### Project Finished: Aug 28, 2024
 
 ## Static Website Portfolio
 
