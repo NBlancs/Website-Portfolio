@@ -1,12 +1,14 @@
 # Project Status: Finished
 
-# Project Started: Aug 26, 2024
+#### Project Started: Aug 26, 2024
 
-# Project Finished: Aug 28, 2024
+#### Project Finished: Aug 28, 2024
 
-## Will Add Updates in the future
-
-# Static Website Portfolio
+## Static Website Portfolio
 
  Languages utilized
  ---> Vanilla CSS, HTML
+
+ Issues
+ ---> Not Yet Responsive for Mobile Devices
+ 
