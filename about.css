@@ -140,6 +140,11 @@ body{
     animation-delay: 7s ;
 }
 
+.container:nth-child(9){
+    animation-delay: 8s ;
+}
+
+
 
 
 .text-box{
@@ -181,7 +186,7 @@ body{
     left: 50%;
     margin-left: -3px;
     z-index: -1;
-    animation: moveline 8s linear forwards; /*Change this based on how many container there is  container = 1s*/
+    animation: moveline 9s linear forwards; /*Change this based on how many container there is  container = 1s*/
 }
 
 @keyframes moveline{
