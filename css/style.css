@@ -156,43 +156,43 @@ body{
 }
 
 .skill-circle.html::before {
-    background-image: url('imgs/html.png');
+    background-image: url('../imgs/html.png');
 }
 
 .skill-circle.css::before {
-    background-image: url('imgs/css.png');
+    background-image: url('../imgs/css.png');
 }
 
 .skill-circle.figma::before {
-    background-image: url('imgs/figma.png');
+    background-image: url('../imgs/figma.png');
 }
 
 .skill-circle.java::before {
-    background-image: url('imgs/java.png');
+    background-image: url('../imgs/java.png');
 }
 
 .skill-circle.python::before {
-    background-image: url('imgs/python.png');
+    background-image: url('../imgs/python.png');
 }
 
 .skill-circle.javascript::before {
-    background-image: url('imgs/js.png');
+    background-image: url('../imgs/js.png');
 }
 
 .skill-circle.kotlin::before {
-    background-image: url('imgs/kotlin.png');
+    background-image: url('../imgs/kotlin.png');
 }
 
 .skill-circle.php::before {
-    background-image: url('imgs/php.png');
+    background-image: url('../imgs/php.png');
 }
 
 .skill-circle.mysql::before {
-    background-image: url('imgs/mysql.png');
+    background-image: url('../imgs/mysql.png');
 }
 
 .skill-circle.android::before {
-    background-image: url('imgs/android.png');
+    background-image: url('../imgs/android.png');
 }
 
 .skill-circle:hover::before {
