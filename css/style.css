@@ -73,7 +73,7 @@ body{
 .profile-pic {
     width: 498.45px;
     height: 483.64px;
-    background-image: url('profimg.jpg');
+    background-image: url('../imgs/profimg.jpg');
     background-position: center;
     background-size: cover;
     border-radius: 50%;
