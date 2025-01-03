@@ -10,5 +10,6 @@
  ---> Vanilla CSS, HTML
 
  Issues
- ---> Not Yet Responsive for Mobile Devices
+ ---> Not Yet Responsive for Mobile  -> Resolved 1/4/2025
+    
  

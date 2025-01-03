@@ -276,6 +276,33 @@ body{
         border-left: 0;
         left: -15px;
     }
+
+    .about h1 {
+        font-size: 42px;
+        margin-top: 80px;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+
+    .container {
+        margin-bottom: 20px;
+    }
+
+    .text-box {
+        padding: 15px;
+    }
+
+    .text-box h2 {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .text-box p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
 }
 
 /* Footer Section */
@@ -380,5 +407,79 @@ footer .wave#wave4{
     }
     100%{
         background-position-x: 1000px;
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1024px) {
+    .header {
+        padding: 20px 50px;
+    }
+
+    .timeline {
+        margin: 50px 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 15px 30px;
+    }
+
+    .navbar a {
+        margin-left: 20px;
+        font-size: 16px;
+    }
+
+    .about h1 {
+        font-size: 56px;
+        margin-top: 100px;
+    }
+
+    .text-box {
+        padding: 15px 20px;
+    }
+
+    .text-box h2 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+
+    .navbar {
+        margin-top: 10px;
+    }
+
+    .navbar a {
+        margin-left: 15px;
+        font-size: 14px;
+    }
+
+    .about {
+        padding: 30px 15px;
+    }
+
+    .about h1 {
+        font-size: 36px;
+        margin-top: 70px;
+    }
+
+    .timeline {
+        margin: 30px 15px;
+    }
+
+    .container {
+        padding-left: 70px;
+        padding-right: 15px;
+    }
+
+    .container img {
+        width: 35px;
+        left: 15px;
     }
 }

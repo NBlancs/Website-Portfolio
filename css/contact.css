@@ -5,9 +5,10 @@
     font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
     min-height: 100vh;
-    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -64,17 +65,17 @@ body{
 /* 
     CONTACT SECTION
 */
-.contact-form{
+.contact-form {
+    flex: 1;
     width: 80%;
     max-width: 1361px;
-    height: 500px;
-    margin: 50px auto;
+    height: auto;
+    min-height: 500px;
+    margin: 120px auto 50px;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-    margin-bottom: 110px;
-    margin-top: 180px;
 }
 
 .contact-form h1{
@@ -124,19 +125,17 @@ form button:hover{
 
 /* Footer Section */
 
-footer{
-    position: fixed;
-    bottom: 0;
+footer {
+    position: relative;
     width: 100%;
     background: #78797D;
     min-height: 100px;
+    margin-top: auto;
     padding: 20px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-
 }
 
 footer .social-icon{
@@ -225,5 +224,136 @@ footer .wave#wave4{
     }
     100%{
         background-position-x: 1000px;
+    }
+}
+
+/* Add these media queries at the end of the file */
+@media screen and (max-width: 1024px) {
+    .header {
+        padding: 20px 50px;
+    }
+
+    .contact-form {
+        width: 90%;
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 15px 30px;
+    }
+
+    .navbar {
+        display: flex;
+        gap: 15px;
+    }
+
+    .navbar a {
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    .contact-form {
+        margin-top: 130px;
+        padding: 15px;
+    }
+
+    .contact-form h1 {
+        font-size: 56px;
+        margin-bottom: 25px;
+    }
+
+    form input,
+    form textarea {
+        padding: 8px;
+        margin-bottom: 8px;
+    }
+
+    form textarea {
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        overflow-y: auto;
+    }
+
+    .header {
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .navbar {
+        margin-top: 10px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .contact-form {
+        width: 95%;
+        height: auto;
+        margin: 100px auto 30px;
+        padding: 15px;
+    }
+
+    .contact-form h1 {
+        font-size: 42px;
+        margin-bottom: 20px;
+    }
+
+    form textarea {
+        height: 150px;
+    }
+
+    form button {
+        padding: 8px;
+        font-size: 15px;
+    }
+
+    footer {
+        position: relative;
+        padding: 20px 30px;
+        margin-top: auto;
+    }
+
+    footer .social-icon li a {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header {
+        padding: 10px 15px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+        margin-left: 8px;
+    }
+
+    .contact-form h1 {
+        font-size: 36px;
+    }
+
+    .contact-form {
+        margin-top: 90px;
+        padding: 12px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 14px;
     }
 }

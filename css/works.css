@@ -244,3 +244,151 @@ footer .wave#wave4{
   }
 }
 
+/* Add these media queries at the end of the file */
+@media screen and (max-width: 1024px) {
+    .header {
+        padding: 20px 50px;
+    }
+
+    .projects {
+        margin-top: 40px;
+        padding: 40px 15px;
+    }
+
+    .card-container {
+        margin-top: 30px;
+        gap: 20px;
+    }
+
+    .card {
+        width: calc(50% - 40px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 15px 30px;
+    }
+
+    /* .navbar {
+        display: flex;
+        gap: 15px;
+    } */
+
+    .navbar a {
+        margin-left: 20;
+        font-size: 16px;
+    }
+
+    .projects h3 {
+        font-size: 56px;
+    }
+
+    .projects p {
+        font-size: 15px;
+    }
+
+    .card {
+        width: calc(100% - 30px);
+        margin: 15px;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .navbar {
+        margin-top: 10px;
+    }
+
+    .navbar a {
+        margin-left: 15px;
+        font-size: 14px;
+    }
+
+    .projects {
+        margin-top: 80px;
+        padding: 30px 15px;
+    }
+
+    .projects h3 {
+        font-size: 42px;
+        margin-bottom: 15px;
+    }
+
+    .projects p {
+        font-size: 14px;
+    }
+
+    .card-container {
+        margin-top: 25px;
+        margin-bottom: 60px;
+    }
+
+    .card {
+        margin: 12px;
+        width: calc(100% - 24px);
+    }
+
+    .card-content {
+        padding: 15px;
+    }
+
+    .card-content h3 {
+        font-size: 22px;
+    }
+
+    .card-content p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .card-content .btn {
+        font-size: 14px;
+        padding: 7px 14px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header {
+        padding: 10px 15px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+        margin-left: 8px;
+    }
+
+    .projects h3 {
+        font-size: 36px;
+    }
+
+    .card {
+        margin: 10px;
+        width: calc(100% - 20px);
+    }
+
+    .card-content {
+        padding: 12px;
+    }
+
+    .card-content h3 {
+        font-size: 20px;
+    }
+}
+
